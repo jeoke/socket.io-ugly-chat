@@ -1,0 +1,7 @@
+{
+  "devDependencies": {},
+  "dependencies": {
+    "mime": "^2.2.0",
+    "socket.io": "^2.0.4"
+  }
+}

@@ -1,0 +1,271 @@
+/* 三栏式布局 */
+html,body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow: hidden;;
+}
+#left,#right{
+	position: absolute;
+	top: 0;
+	width: 200px;
+	height: 90%;
+    border: none;
+}
+#left{
+	left: 0;
+	overflow: scroll;
+}
+#right{
+	right: 0;
+}
+#content{
+	margin: 0 210px;
+	height: 100%;
+}
+#v_room{
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+}
+
+
+html, input {
+  font-family:
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    "Lucida Grande",
+    sans-serif;
+}
+
+ul {
+  list-style: none;
+  word-wrap: break-word;
+}
+
+/* Pages */
+
+.pages {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.page {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+/* Login Page */
+
+.login.page {
+  background-color: #000;
+}
+
+.login.page .form {
+  height: 100px;
+  margin-top: -100px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+
+.login.page .form .usernameInput {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 400px;
+}
+
+.login.page .title {
+  font-size: 200%;
+}
+
+.login.page .usernameInput {
+  font-size: 200%;
+  letter-spacing: 3px;
+}
+
+.login.page .title, .login.page .usernameInput {
+  color: #fff;
+  font-weight: 100;
+}
+
+/* Chat page */
+
+.chat.page {
+  display: none;
+}
+
+/* Font */
+
+.messages {
+  font-size: 150%;
+}
+
+.inputMessage {
+  font-size: 100%;
+}
+
+.log {
+  color: gray;
+  font-size: 70%;
+  margin: 5px;
+  text-align: center;
+}
+
+/* Messages */
+
+.chatArea {
+  height: 100%;
+  padding-bottom: 60px;
+}
+
+.messages {
+  height: 100%;
+  margin: 0;
+  padding: 10px 20px 10px 20px;
+  overflow: scroll;
+}
+
+.message.typing .messageBody {
+  color: gray;
+}
+
+.username {
+  font-weight: 700px;
+  overflow: hidden;
+  padding-right: 15px;
+  text-align: left;
+}
+
+/* message */
+.message{
+	display: inline-block;
+}
+
+.message h3{
+	margin:0 0 0 10px;
+}
+
+.clear:after {
+　content:".";
+　height:0;
+　visibility:hidden;
+　display:block;
+　clear:both;
+ }
+
+.message div{
+	display: inline-block;
+	margin-bottom: 21px;
+	margin-left: 10px;
+	width: 700px;
+	word-wrap: break-word;
+}
+
+.imgEl{
+    float:left;
+}
+
+
+/* Input */
+
+.inputMessage {
+  border: 10px solid #000;
+  bottom: 0;
+  height: 60px;
+  left: 0;
+  outline: none;
+  padding-left: 10px;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+/* room list */
+.wrap{
+	background: #fff;	
+}
+
+.click{
+	background: #000;
+	color: #fff;
+}
+
+.effect{
+	position: relative;
+	box-shadow:inset 0 0 4px #333,0 1px 4px #333;
+	-moz-box-shadow:inset 0 0 4px #000000,0 1px 4px #333;
+	-webkit-box-shadow:inset 0 0 4px #000000,0 1px 4px #333;
+	-o-box-shadow:inset 0 0 4px #333,0 1px 4px #333;
+	border-radius: 4px;
+	width: 180px;
+	text-align: center;
+	line-height: 30px;
+	height: 30px;
+	margin-top: 10px;
+}
+
+.effect:before,.effect:after{
+	content: '';
+	background: #000;
+	position: absolute;
+	z-index: -1;
+	top:50%;
+	bottom: 0px;
+	left: 20px;
+	right: 20px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.8);
+	-moz-box-shadow: 0 0 20px rgba(0,0,0,0.8);
+	-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.8);
+	-o-box-shadow: 0 0 20px rgba(0,0,0,0.8);
+	border-radius: 100px/10px; 
+}
+/* add button */
+.add_p{
+	position: absolute;
+	bottom: 42px;
+	right: 10px;
+}
+.add{
+	border-radius: 20px;
+	width: 125px;
+	height: 35px;
+    background-color: #fff;
+    font-family:
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    "Lucida Grande",
+    sans-serif;
+    font-size: 10px;
+    color: #000;
+}
+
+.add:hover{
+	background-color: #000;
+	color: #fff; 
+}
+
+#inputPassword{
+	width: 180px;
+	margin-bottom: 5px;
+    height: 30px;
+    margin-top: 15px;
+}
+
+/* tip */
+.tip{
+   border-color: red;
+}
